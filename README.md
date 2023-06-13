@@ -1,10 +1,10 @@
 
 ## Despliegue de apps Spring Boot en Heroku
 
-Crear archivo 'system.properties' en el proyecto con el contenido:
-'''
+Crear archivo ´system.properties´ en el proyecto con el contenido:
+´´´
 java.runtime.version=17
-'''
+´´´
 
 1. Crear cuenta en Heroku.com y en github.com
 2. Tener configurado git en el ordenador o con git Bash:
