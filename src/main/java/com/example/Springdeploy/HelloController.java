@@ -9,22 +9,22 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     
     // esto hace referencia a app.message que esta en application properties,
-    // cuando ejecuto http://localhost:8080/hola aparece "Hola Mundo, como va!!"
+    // cuando ejecuto http://localhost:8081/hola aparece "Hola Mundo, como va!!"
     // en Postman y "Hola mundo desde produccion" por consola
     @Value("${app.message}")
     String message;
     
-//    @Value("${app.variableDeEjemplo}")
-//    String message2;
-//    
-//    @Value("${app.variabledeejemplo2}")
-//    String message3;
+    @Value("${app.variableDeEjemplo}")
+    String message2;
+    
+    @Value("${app.variabledeejemplo2}")
+    String message3;
     
     @GetMapping("/hola")
     public String holaMundo(){
         System.out.println(message);
-//        System.out.println("Nombre Usuario: " + message2);
-//        System.out.println("Nombre computadora: " + message3);
+        System.out.println("Nombre Usuario: " + message2);
+        System.out.println("Nombre computadora: " + message3);
         return "Hola Mundo, como va!!";
     }
     
