@@ -23,8 +23,8 @@ public class HelloController {
     @GetMapping("/hola")
     public String holaMundo(){
         System.out.println(message);
-        System.out.println("Nombre Usuario: " + message2);
-        System.out.println("Nombre computadora: " + message3);
+        System.out.println(message2);
+        System.out.println(message3);
         return "Hola Mundo, como va!!";
     }
     
